@@ -203,7 +203,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             getInvestment: e => {
                 e.preventDefault();
                 let store = getStore();
-                // sets the initial price for ecah fund based on the given date
+                // sets the initial price for each fund based on the given date
                 let initialClooneyPrice = store.dataClooney.data.filter(cuota => cuota.attributes.date === store.dateStart);
                 let initialPittPrice = store.dataPitt.data.filter(cuota => cuota.attributes.date === store.dateStart);
                 let initialNorrisPrice = store.dataNorris.data.filter(cuota => cuota.attributes.date === store.dateStart);
