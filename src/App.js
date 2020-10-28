@@ -11,7 +11,7 @@ function App() {
   });
 
   let date = new Date()
-  const maxDate = moment(date).format('DD-MM-YYYY')
+  const maxDate = moment(date).format('YYYY-MM-DD')
 
   let finalAmount = Math.trunc(store.norrisFinal + store.pittFinal + store.clooneyFinal)
   let revenue = finalAmount - parseInt(store.amount)
@@ -46,7 +46,7 @@ function App() {
                 </div>
                 <div className="form-group form-row">
                   <label for="dateStart">Ingresa la fecha de inversión</label>
-                  <input type="date" className="form-control" readOnly={store.amountPass == false ? true : false} id="dateStart" name="dateStart" max={maxDate} onChange={e => { actions.setDate(e, maxDate); setState({ ...state, date: true }) }} />
+                  <input type="date" className="form-control" readOnly={store.amountPass == false ? true : false} id="dateStart" name="dateStart" min="2018-02-12" max={maxDate} onChange={e => { actions.setDate(e); setState({ ...state, date: true }) }} />
                 </div>
                 <div className="form-row">
                   {
@@ -120,7 +120,7 @@ function App() {
             Esta aplicación utiliza la información que brinda la API de Fintual y se encarga de responder esa hípotesis de inversiones que "podrían haber sido", los pasos para usarla son súper simples! 😁</p>
             <ol className="px-4">
               <li className="py-3">Ingresa un monto en pesos chilenos (ejemplo: 2000000 * sólo números enteros! sin puntos ni comas 🙃)</li>
-              <li className="py-3">Ingresa una fecha (*sólo fechas pasadas. Lamentablemente, esta aplicación aún no puede predecir el futuro...)</li>
+              <li className="py-3">Ingresa una fecha (*desde 2018-02-12 hasta hoy. Lamentablemente, esta aplicación aún no puede predecir el futuro...)</li>
               <li className="py-3">Elige cómo hubieses distribuído tus fondos, desde el más riesgoso al más conservador, lo importante es que no te pases del 100%!</li>
               <li className="py-3">Presiona el botón de "Simular" y listo! Tendrás el resultado de tu inversión "what if". 😎</li>
               <li className="py-3">Si lo deseas puedes volver a simular con nuevos montos y fechas</li>

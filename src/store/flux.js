@@ -55,8 +55,9 @@ const getState = ({ getStore, getActions, setStore }) => {
             // set past date, validates for NOT future dates & triggers alert
             setDate: e => {
                 let date = new Date()
-                let inputDate = moment(e.target.value, 'YYYY-MM-DD')
-                const maxDate = moment(date, 'YYYY-MM-DD')
+                const inputDate = moment(e.target.value, 'YYYY-MM-DD')
+                const maxDate = moment(date, 'YYYY-MM-DD')                
+                const minDate = moment(date, 'YYYY-MM-DD')
                 if (inputDate > maxDate) {
                     setStore({
                         dateError: true,
