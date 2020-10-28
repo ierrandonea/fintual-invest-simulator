@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// frameworks & libraries
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'animate.css/animate.min.css';
+
 import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// scripts
+import 'bootstrap';
+import 'popper.js';
+import 'jquery';
 
 ReactDOM.render(
   <React.StrictMode>

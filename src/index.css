@@ -1,13 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(350deg, rgba(255, 255, 255, 1) 0%, rgba(251, 250, 250, 1) 70%, rgba(255, 255, 255, 1) 70%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+input {
+  border-radius: 10px !important;
+}
+
+.white-link {
+  color: white !important;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    width: 15%;
+  }
+}
+
+.rounded-lg {
+  border-radius: 25px !important;
+}
+
+.btn-primary {
+  background-color: #005ad6;
+  border: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e1e1e1;
+  border: none;
+}
+
+.font-weight-lighter {
+  font-weight: 500;
+}
+
+.font-weight-light {
+  font-weight: 500;
+}
+
+.font-weight-normal {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.font-weight-bolder {
+  font-weight: 700;
 }
