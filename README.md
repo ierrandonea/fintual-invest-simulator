@@ -21,7 +21,7 @@ Launch the project
 The instructrions for interaction with the app are as following:
 
 ---
-*NOTE*
+
 Welcome to the past investment simulator!
 
 Many times we ask ourselves "What if I had made an investment at some point of my life? How much money could I have gained / lost? 🤔
