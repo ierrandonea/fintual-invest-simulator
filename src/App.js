@@ -81,14 +81,18 @@ function App() {
                 </div>
                 {
                   !!store.finalAmount &&
-                  (<div className="form-row">
-                    <div className="col-6 mt-4">
-                      <h5>Tu saldo hoy sería:</h5>
-                      <h3>${finalAmount}</h3>
+                  (<div className="form-row d-flex justify-content-between py-3">
+                    <div className="col-12 col-md-6 mt-4 card rounded-lg py-3 shadow-sm">
+                      <div className="ml-3 pl-3 border-left">
+                        <h5>Tu saldo hoy sería:</h5>
+                        <h3>${finalAmount}</h3>
+                      </div>
                     </div>
-                    <div className="col-6 mt-4">
-                      <h5>Tu ganacia:</h5>
-                      <h3>${revenue}</h3>
+                    <div className="col-12 col-md-5 mt-4 card rounded-lg py-3 shadow-sm">
+                      <div className="ml-3 pl-3 border-left">
+                        <h5>Tu ganacia:</h5>
+                        <h3>${revenue}</h3>
+                      </div>
                     </div>
                   </div>)
                 }
@@ -116,7 +120,7 @@ function App() {
             <br /><br />
             Muchas veces nos preguntamos "¿Qué tal si hubiese hecho una inversión en algún momento?, ¿Cúanta plata podría haber ganado/perdido? 🤔
             <br /><br />
-            
+
             Esta aplicación utiliza la información que brinda la API de Fintual y se encarga de responder esa hípotesis de inversiones que "podrían haber sido", los pasos para usarla son súper simples! 😁</p>
             <ol className="px-4">
               <li className="py-3">Ingresa un monto en pesos chilenos (ejemplo: 2000000 * sólo números enteros! sin puntos ni comas 🙃)</li>

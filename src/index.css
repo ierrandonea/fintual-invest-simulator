@@ -73,3 +73,7 @@ input {
 .font-weight-bolder {
   font-weight: 700;
 }
+
+.border-left {
+  border: none !important;
+}
